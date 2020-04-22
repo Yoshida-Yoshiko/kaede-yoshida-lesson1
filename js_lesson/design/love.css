@@ -1,0 +1,50 @@
+header {
+  margin: 0;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  background-color: gray;
+  color: white;
+  text-align: left;
+  font-size: 200%;
+}
+
+header p {
+  margin-left: 0.5em;
+}
+
+main{
+  text-align: center;
+}
+
+main h1{
+  color: tomato;
+}
+
+main a {
+  color: gray;
+  font-size: 70%;
+  margin-top: 2.5em;
+  text-decoration: none;
+}
+main a:hover{
+  color: yellow;
+}
+main a:visited{
+  opacity: 0.7;
+}
+main a:visited:hover{
+  color: yellow;
+}
+
+footer {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  font-size: small;
+  padding-top: 2.0em;
+  padding-bottom: 0em;
+  text-decoration: none;
+}
+
+
+

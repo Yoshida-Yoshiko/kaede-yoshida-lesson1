@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#target {
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+.info {
+  color: gray;
+}
+
+
+/* ヘッダー・フッターセット*/
+header {
+  margin: 0;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  background-color: gray;
+  color: white;
+  text-align: left;
+  font-size: 200%;
+}
+header p {
+  margin-left: 0.5em;
+}
+
+main p{
+  margin-top: 2.0em;
+  margin-bottom: 2.0em;
+}
+main a {
+  color: gray;
+  font-size: 70%;
+  padding-top: 3.5em;;
+  text-decoration: none;
+}
+main a:hover{
+  color: yellow;
+}
+main a:visited{
+  opacity: 0.7;
+}
+main a:visited:hover{
+  color: yellow;
+}
+
+footer {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  font-size: small;
+  padding-top: 2.0em;
+  padding-bottom: 0em;
+  text-decoration: none;
+}

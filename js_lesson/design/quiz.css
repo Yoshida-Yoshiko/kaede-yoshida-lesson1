@@ -1,0 +1,150 @@
+body {
+  background: white;
+  font-size: 18px;
+  font-family: Verdana, sans-serif;
+}
+
+.container {
+  width: 400px;
+  margin: 40px auto;
+  background: silver;
+  border-radius: 6px;
+  padding: 16px;
+  position: relative;
+}
+
+#question {
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+#choices {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+#choices > li {
+  border: 3px solid white;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#choices > li:hover {
+  background: #f8f8f8;
+}
+
+#choices > li.correct {
+  background: lightskyblue;
+  border-color: deepskyblue;
+  color: blue;
+  font-weight: bold;
+}
+
+#choices > li.correct::after {
+  content: ' ... 正解!';
+}
+
+#choices > li.wrong {
+  background: #f8d8da;
+  border-color: #f5c6cb;
+  color: #721c24;
+  font-weight: bold;
+}
+
+#choices > li.wrong::after {
+  content: ' ... 不正解!';
+}
+
+#btn, #result > a {
+  background: yellow;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  color: gray;
+  box-shadow: 0 4px 0 gold;
+}
+
+#btn.disabled {
+  background: lemonchiffon;
+  box-shadow: 0 4px 0 wheat;
+  opacity: 0.8;
+}
+
+#result {
+  position: absolute;
+  width: 300px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 4px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+#result.hidden {
+  transform: translateY(-500px);
+}
+
+#result > p {
+  font-size: 24px;
+}
+
+#result > a {
+  display: block;
+  text-decoration: none;
+}
+
+header {
+  margin: 0;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  background-color: gray;
+  color: white;
+  text-align: left;
+  font-size: 200%;
+}
+header p {
+  margin-left: 0.5em;
+}
+
+main {
+  text-align: center;
+}
+
+main p{
+  margin-top: 2.0em;
+  margin-bottom: 2.0em;
+}
+main a {
+  color: gray;
+  font-size: 70%;
+  padding-top: 3.5em;;
+  text-decoration: none;
+}
+main a:hover{
+  color: yellow;
+}
+main a:visited{
+  opacity: 0.7;
+}
+main a:visited:hover{
+  color: yellow;
+}
+
+footer {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  font-size: small;
+  padding-top: 2.0em;
+  padding-bottom: 0em;
+  text-decoration: none;
+}
